@@ -1,16 +1,36 @@
-
-
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5;
+  font-size: 20px;
+}
 header{
   min-height: 100vh;
   background-image: url("../images/hero\ section.jpeg");
   background-size: cover;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  
+
+  font-family: 
   
 }
+
 .cta {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
   margin: 1em;
   padding: 1rem;
   max-width: 40ch;
-  border-radius: 5px;
+  border-radius: 10px;
 
   /* color and font */
   background-color: hsl(290, 15%, 28%);

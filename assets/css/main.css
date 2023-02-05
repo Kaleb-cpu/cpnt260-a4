@@ -1,39 +1,96 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
 body{
+  margin: 0;
+
+  /* fonts */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 1.5;
-  font-size: 20px;
+  line-height: 1.2;
+  font-size: 22px;
 }
 header{
+  background-image: url("../images/hero\ section.jpg");
+  background-size: cover; 
+
+  /* image positioning */
   min-height: 100vh;
-  background-image: url("../images/hero\ section.jpeg");
-  background-size: cover;
+  background-position: center;
 }
-.heading{
-  display: flex;
+
+h1{
+  /* title positioning */
+  display: inline-flex;
   justify-content: center;
-  align-items:center;
-  height: 100vh;
-  
+  width: 100%;
+  position: absolute;
+  margin: 0;
 
-  font-family: 
+  /* fonts */
+  font-size: clamp(6rem, 10vw, 7.5rem); 
+  font-family: 'Aboreto', Courier New, Courier, serif;
   
 }
-
-.cta {
+.cta-container{
   display: flex;
   justify-content: flex-end;
-  width: 100vw;
-  margin: 1em;
-  padding: 1rem;
-  max-width: 40ch;
-  border-radius: 10px;
-
-  /* color and font */
-  background-color: hsl(290, 15%, 28%);
-  color: white;
-  font-size: clamp(1.3rem, 2.5vw, 1.8rem); 
+  align-items: flex-end;
+  height: 100vh;  
 }
+.cta {
+  padding: 0.5em;
+  max-width: 20ch;
+  border-radius: 10px;
+  
+  /* color and font */
+  background-color: none;
+  color: hsl(204, 90%, 8%);
+  font-size: clamp(1.7rem, 2.5vw, 1.8rem);
+  
+}
+
+.cta a{
+  color: hsl(10, 70%, 25%); 
+  text-decoration: none;
+}
+button{
+
+  /* cta button properties */
+  background-color: none ;
+  font-size: clamp(3.4rem, 5vw, 7rem); 
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+.kids{
+
+  /* emphasis on kids clothing *primary* */
+  background-color: lightblue;
+  color: #D52A3D;
+  border-radius: 6px;
+}
+
+
+@media only screen and (min-width: 60em){
+
+  /* main header */
+  header{
+    background-position: center; 
+    background-size: cover;
+  }
+
+  /* cta parent */
+  .cta-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 19em;
+    
+  }
+
+
+  /* cta button */
+  button:hover{
+    background-color: #D52A3D;
+    transition: background-color 1s;
+
+  }
+}
+  

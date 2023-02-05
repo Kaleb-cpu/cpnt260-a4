@@ -14,11 +14,12 @@ header{
   /* image positioning */
   min-height: 100vh;
   background-position: center;
+  
 }
 
 h1{
   /* title positioning */
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   width: 100%;
   position: absolute;
@@ -29,31 +30,33 @@ h1{
   font-family: 'Aboreto', Courier New, Courier, serif;
   
 }
+
 .cta-container{
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
+  justify-content: flex-end;
   height: 100vh;  
 }
 .cta {
   padding: 0.5em;
-  max-width: 20ch;
+  max-width: 30ch;
   border-radius: 10px;
   
   /* color and font */
   background-color: none;
   color: hsl(204, 90%, 8%);
   font-size: clamp(1.7rem, 2.5vw, 1.8rem);
-  
 }
 
 .cta a{
   color: hsl(10, 70%, 25%); 
   text-decoration: none;
 }
+
 p{
-  font-size: clamp(1.5rem, 2.5vw, 4rem); 
+  font-size: clamp(2rem, 2.5vw, 4rem); 
 }
+
 button{
 
   /* cta button properties */
@@ -87,7 +90,6 @@ button{
     margin-left: 19em;
     
   }
-
 
   /* cta button */
   button:hover{

@@ -51,6 +51,9 @@ h1{
   color: hsl(10, 70%, 25%); 
   text-decoration: none;
 }
+p{
+  font-size: clamp(1.5rem, 2.5vw, 4rem); 
+}
 button{
 
   /* cta button properties */
